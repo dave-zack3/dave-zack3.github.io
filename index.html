@@ -4,14 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dave Zack | Data Scientist</title>
+  <meta property="og:title" content="Dave Zack | Data Scientist" />
+  <meta property="og:description" content="Sports analytics portfolio — football, basketball, baseball, hockey, and soccer." />
+  <meta property="og:image" content="https://dave-zack3.github.io/og-image.png" />
+  <meta property="og:url" content="https://dave-zack3.github.io" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://dave-zack3.github.io/og-image.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy:    #0f172a;
-      --blue:    #3b82f6;
-      --blue-dk: #1d4ed8;
+      --navy:      #0f172a;
+      --slate-bg:  #e2e8f0;
+      --blue:      #5b21b6;
+      --blue-dk:   #4c1d95;
       --slate:   #64748b;
       --text:    #1e293b;
       --bg:      #f8fafc;
@@ -33,7 +41,7 @@
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
-      background: rgba(15, 23, 42, 0.96);
+      background: rgba(226, 232, 240, 0.97);
       backdrop-filter: blur(10px);
       z-index: 100;
       padding: 0 2rem;
@@ -47,7 +55,7 @@
       height: 60px;
     }
     .nav-logo {
-      color: var(--white);
+      color: var(--navy);
       font-weight: 700;
       font-size: 1.05rem;
       text-decoration: none;
@@ -59,22 +67,22 @@
       gap: 2rem;
     }
     nav ul a {
-      color: #94a3b8;
+      color: #475569;
       text-decoration: none;
       font-size: 0.88rem;
       font-weight: 500;
       transition: color 0.15s;
     }
-    nav ul a:hover { color: var(--white); }
+    nav ul a:hover { color: var(--navy); }
 
     /* ── HERO ── */
     .hero {
-      background: var(--navy);
+      background: var(--slate-bg);
       padding: 130px 2rem 90px;
       text-align: center;
     }
     .hero h1 {
-      color: var(--white);
+      color: var(--navy);
       font-size: clamp(2.4rem, 5.5vw, 3.75rem);
       font-weight: 800;
       letter-spacing: -0.03em;
@@ -88,7 +96,7 @@
       letter-spacing: 0.01em;
     }
     .hero-sub {
-      color: #94a3b8;
+      color: #475569;
       font-size: 1rem;
       max-width: 520px;
       margin: 0 auto 2.25rem;
@@ -116,8 +124,8 @@
     }
     .btn-primary { background: var(--blue); color: var(--white); }
     .btn-primary:hover { background: var(--blue-dk); }
-    .btn-ghost { border-color: #334155; color: #94a3b8; }
-    .btn-ghost:hover { border-color: #64748b; color: var(--white); }
+    .btn-ghost { border-color: #94a3b8; color: #475569; }
+    .btn-ghost:hover { border-color: #64748b; color: var(--navy); }
 
     /* ── SECTIONS ── */
     section { padding: 80px 2rem; }
@@ -281,20 +289,19 @@
 
     /* ── CONTACT ── */
     #contact {
-      background: var(--navy);
+      background: var(--slate-bg);
       text-align: center;
     }
-    #contact .sec-label { color: #60a5fa; }
-    #contact .sec-title { color: var(--white); }
-    #contact .sec-desc { color: #94a3b8; margin: 0 auto 2.25rem; }
+    #contact .sec-title { color: var(--navy); }
+    #contact .sec-desc { color: #475569; margin: 0 auto 2.25rem; }
     .contact-links { display: flex; gap: 0.85rem; justify-content: center; flex-wrap: wrap; }
 
     /* ── FOOTER ── */
     footer {
-      background: #07101f;
+      background: #cbd5e1;
       padding: 1.4rem 2rem;
       text-align: center;
-      color: #334155;
+      color: #64748b;
       font-size: 0.8rem;
     }
 
@@ -395,9 +402,6 @@
       <div class="card">
         <div class="card-head">
           <span class="sport-tag tag-football">Football</span>
-          <a href="https://github.com/dave-zack3/nfl_bayesian_rate_model" target="_blank" rel="noopener" class="gh-link" title="View on GitHub">
-            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
         </div>
         <h3>QB WAR Forecasting</h3>
         <p>Hierarchical Bayesian model forecasting quarterback pass WAR for the 2024 and 2025 NFL seasons, built for the Las Vegas Raiders Data Science Challenge. Includes SQL feature engineering on play-by-play data, partial pooling across QBs, and a quadratic aging curve.</p>
@@ -407,6 +411,25 @@
           <span class="pill">SQL</span>
           <span class="pill">Bayesian Inference</span>
           <span class="pill">Pandas</span>
+        </div>
+      </div>
+
+      <!-- NFL Spread -->
+      <div class="card">
+        <div class="card-head">
+          <span class="sport-tag tag-football">Football</span>
+          <a href="https://github.com/dave-zack3/nfl_bayesian_rate_model" target="_blank" rel="noopener" class="gh-link" title="View on GitHub">
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+        <h3>NFL Spread Forecasting</h3>
+        <p>Probabilistic model for forecasting NFL point spreads using dynamic hierarchical Bayesian inference. Team strength is modeled as a latent AR(1) process with explicit offseason discontinuities. Matches Vegas closing-line RMSE within 0.04 points while producing full posterior predictive distributions for calibrated probability statements.</p>
+        <div class="pills">
+          <span class="pill">Python</span>
+          <span class="pill">PyMC</span>
+          <span class="pill">ArviZ</span>
+          <span class="pill">Bayesian Inference</span>
+          <span class="pill">AR(1)</span>
         </div>
       </div>
 
